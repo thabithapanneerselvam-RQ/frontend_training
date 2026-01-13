@@ -5,7 +5,7 @@
 
 .box-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
   padding: 30px;
   max-width: 1200px;
