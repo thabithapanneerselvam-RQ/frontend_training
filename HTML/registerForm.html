@@ -3,43 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>Register Form</title>
-        <style>
-            header{
-                background-color: black;
-                color: white;
-                text-align: center;
-                padding: 20px;
-            }
-            label{
-                text-align: center;
-            }
-            table, th, td{
-                border: 1px solid black;
-                padding: 10px;
-                margin: 50px;
-                margin-left: 1px;
-                text-align: center;
-                border-collapse: collapse;
-            }
-        </style>
+        <link rel="stylesheet" href="css/registerForm.css">
         </head>
         
         <body>
             <header>
                 <h1>Registration Form here...!</h1>
             </header>
-            <main>
-                <form>
+            <main class="container">
+                <div class="page-wrapper">
+
+                <div class="form-card">
+                <form class="form-section">
                     <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" placeholder="enter you firstname" required><br><br>
+                    <input type="text" id="fname" placeholder="enter you firstname" required autofocus><br><br>
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" placeholder="enter you lastname" required><br><br>
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" placeholder="enter your email" required><br><br>
+                    <input type="email" id="email" placeholder="enter your email" required autocomplete="off"><br><br>
                     <label for="age">Age:</label><br>
                     <input type="text" id="age" placeholder="enter your age" required><br><br>
                     <label for="phone">Phone number:</label><br>
-                    <input type="text" id="phone" placeholder="enter your phone number" patter="[0-9]{10}" required><br><br>
+                    <input type="text" id="phone" placeholder="enter your phone number" pattern="[0-9]{10}" required><br><br>
                     <label for="gender">Gender:</label><br>
                     <input type="radio" id="male" name="gender" value="male" required> Male
                     <input type="radio" id="female" name="gender" value="female" required> Female
@@ -55,7 +40,11 @@
                     <br><br>
                     <button type="reset" value="Reset">Reset</button>
 
-                    <table>
+                    </form> 
+                </div>
+                
+                    <div class="table-card">
+                    <table class="table-section">
                     <thead>
                         <tr>
                             <th>S.no</th>
@@ -81,13 +70,21 @@
                             <td>Intern</td>
                         </tr>
                     </tbody>
-<br><br>
+                    <br><br>
                     <tfoot>
-                        The table contains registered candidates details
+                        <tr>
+                            <td colspan="8">The table contains registered candidates details</td>
+                        </tr>
                     </tfoot>
 
                     </table>
-                </form>
+                    </div>
+                </div>
+
+                
+
+
+
             </main>
         </body>
 </html>
