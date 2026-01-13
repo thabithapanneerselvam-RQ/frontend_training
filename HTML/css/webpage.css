@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+}
+
+.site-header{
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 60px;
+  max-width: 100%;
+}
+
+
+.site-header .header-content{
+  display: flex;
+  align-items: center;     
+  gap: 15px;               
+}
+
+.site-header, .hero{
+  margin: auto;
+  padding-left: 170px;
+  text-align: left;
+  margin-top: auto;
+}
+
+
+.header-text h1{
+  margin: 50;
+  font-size: 28px;
+}
+
+.header-text p{
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.hero h1{
+  margin: 0;
+  font-size: 60px;  
+}
+
+.hero p{
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+
+
+.footer{
+  background: black;
+  color: white;
+  padding: 100px;
+  font-size: 20px;
+  align-items: center;
+  line-height: 35px;
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-top{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h3, .footer-col h4{
+  margin-bottom: 15px;
+}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+  word-spacing: normal;
+}
+
+.footer-col li{
+  margin-bottom: 8px;
+}
+
+hr{
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  margin-right: 35px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+.links a{
+  margin-right: 35px;
+}  
+
+.content-layout{
+  max-width: 1500px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.content-left b {
+  font-size: 38px;
+  line-height: 1.25;
+}
+
+
+.content-left video{
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.content-right{
+  border: 1px solid white;
+  padding: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.content-right h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content-right input[type="text"],
+.content-right input[type="email"]{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(149, 146, 146);
+}
+
+.content-right button{
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 900px){
+  .content-layout{
+    grid-template-columns: 1fr;
+  }
+}
